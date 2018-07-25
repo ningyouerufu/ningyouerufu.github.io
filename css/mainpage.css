@@ -8,13 +8,13 @@
 	cursor: url("../images/cursor-active.png"),auto;
 }
 body{
-	background: black url("../images/mainpage-background.jpg") fixed no-repeat center;
+	background: black url("../images/mainpage-background.jpg") fixed no-repeat top;
 	background-size: 100% 100%;
 }
 
 @media screen and (max-width: 767px){
 	body{
-		background: black url("../images/mainpage-background-w.jpg") fixed no-repeat center;
+		background: black url("../images/mainpage-background-w.jpg") fixed no-repeat top;
 		background-size: cover;
 	}
 	.container{
@@ -22,7 +22,7 @@ body{
 		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2)!important;
 		width: 350px!important;
 	}
-	a{
+	.container a{
 		color: #2a2a2a !important;
 	}
 	#welcome{
@@ -46,12 +46,6 @@ body{
 	#github{
 		background: url("../images/blackicon_git.png")!important;
 		background-size: 60px 60px!important;
-	}
-	.footer{
-		background: rgba(255, 255,255,0.4)!important;
-	}
-	.description{
-		color: #2a2a2a!important;
 	}
 }
 
@@ -110,17 +104,33 @@ body{
 	background: url("../images/icon_weibo.png");
 	background-size: 60px 60px;
 }
+#weibo:hover{
+    background: url("../images/redicon_weibo.png");
+    background-size: 60px 60px;
+}
 #qq{
 	background: url("../images/icon_qq.png");
 	background-size: 60px 60px;
+}
+#qq:hover{
+    background: url("../images/redicon_qq.png");
+    background-size: 60px 60px;
 }
 #wechat{
 	background: url("../images/icon_wechat.png");
 	background-size: 60px 60px;
 }
+#wechat:hover{
+    background: url("../images/redicon_wechat.png");
+    background-size: 60px 60px;
+}
 #github{
 	background: url("../images/icon_git.png");
 	background-size: 60px 60px;
+}
+#github:hover{
+    background: url("../images/redicon_git.png");
+    background-size: 60px 60px;
 }
 #welcome{
 	display: block;
@@ -149,29 +159,4 @@ body{
 	color: white;
 	opacity: 0;
 	transition: opacity 1000ms 3800ms;
-}
-
-.footer{
-	height: 26px;
-	background: rgba(0,0,0,0.6);
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-.description{
-	position: fixed;
-	margin: auto;
-	left: 0;
-	right: 0;
-	width: 471px;
-	color: white;
-}
-.description a{
-	color: #a54a4d;
-}
-.youpaiyun{
-	height: 26px;
-	vertical-align:middle;
 }
