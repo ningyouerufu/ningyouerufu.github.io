@@ -160,3 +160,6 @@ body{
 	opacity: 0;
 	transition: opacity 1000ms 3800ms;
 }
+#intoblog:hover{
+	color: #bc5151;
+}
